@@ -1,6 +1,16 @@
 # get-bem
-
+ [![npm version](https://badge.fury.io/js/get-bem.svg)](https://badge.fury.io/js/get-bem)
+ 
 A sass library from easily generating BEM methodology style classes
+
+## Installation
+
+````bash
+npm i get-bem
+````
+````bash
+yarn add get-bem
+````
 
 
 ## Usage
