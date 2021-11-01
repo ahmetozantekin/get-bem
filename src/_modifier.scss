@@ -1,0 +1,22 @@
+@function modifier_generator($modifiers...) {
+    $selector: ();
+
+    @each $modifier in $modifiers {
+        $new-selector: ();
+
+        @each $sel in & {
+            $modified-selector: #{$sel}#{$modifier-seperator}#{$modifier};
+            $new-selector: append($new-selector, $modified-selector, 'comma');
+        }
+
+        $selector: append($selector, $new-selector, 'comma');
+    }
+
+    @return $selector;
+}
+
+@mixin modifier($modifiers...) {
+    @at-root #{modifier_generator($modifiers...)} {
+        @content;
+    }
+}

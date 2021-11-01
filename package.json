@@ -1,0 +1,25 @@
+{  
+  "name": "get-bem",
+  "version": "1.0.0",
+  "description": "Sass library from easily generating BEM methodology style classes",
+  "author": "Ahmet Ozan Tekin",
+  "license": "ISC",
+  "main": "get-bem.scss",
+  "scripts": {
+    "demo": "sass --watch demo/test.scss demo/compiled/test.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmetozantekin/get-bem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmetozantekin/get-bem/issues"
+  },
+  "homepage": "https://github.com/ahmetozantekin/get-bem",
+  "dependencies": {
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {}
+}
+
+

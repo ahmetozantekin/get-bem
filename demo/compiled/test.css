@@ -1,0 +1,30 @@
+.content {
+  width: 100%;
+}
+.content--hidden {
+  visibility: hidden;
+}
+
+.content__body {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+.content__body--small {
+  font-size: 1rem;
+}
+
+.content__body--tiny {
+  font-size: 0.75rem;
+}
+
+.content__body__image {
+  width: 200px;
+  height: 200px;
+}
+
+.content__footer {
+  border-top: 1px solid initial;
+}
+
+/*# sourceMappingURL=test.css.map */

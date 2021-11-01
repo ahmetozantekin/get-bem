@@ -1,0 +1,34 @@
+@import '../lib/get-bem.scss';
+
+// $element-seperator: '_E_';
+// $modifier-seperator: '-M-';
+ 
+@include block("content") {
+    width: 100%;
+
+    @include modifier('hidden') {
+        visibility: hidden;
+    }
+
+    @include element('body') { 
+        display: flex;
+        justify-content: center;
+        font-size: 1.1rem;
+
+        @include modifier('small') {
+            font-size: 1rem;
+        }
+        @include modifier('tiny') {
+            font-size: .75rem;
+        }
+
+        @include element('image') { 
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    @include element('footer') {
+        border-top: 1px solid initial;
+    }
+}

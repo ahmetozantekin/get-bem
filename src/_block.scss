@@ -1,0 +1,18 @@
+@function block_generator($name) {
+    $selector: '.' + $name;
+    $set-current: set-current-context('block', $name, $selector);
+
+    @return $selector;
+}
+
+@mixin block_generator_mixin($name) {
+    @at-root #{block_generator($name)} {
+        @content;
+    }
+}
+
+@mixin block($name) {
+    @include block_generator_mixin($name) {
+      @content;
+    }
+}

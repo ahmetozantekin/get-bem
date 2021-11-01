@@ -1,0 +1,16 @@
+@function element_generator($elements...) {
+    $selector: ();
+
+    @each $element in $elements {
+        $e: #{&}#{$element-seperator}#{$element};
+        $selector: append($selector, $e, 'comma');
+    }
+
+    @return $selector;
+}
+
+@mixin element($elements...) {
+    @at-root #{element_generator($elements...)} {
+        @content;
+    }
+}
