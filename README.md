@@ -7,7 +7,7 @@ A sass library from easily generating BEM methodology style classes
 Import it into your main stylesheet:
 
 ````scss
-@import 'get-bem';
+@import 'get-bem.scss';
 ````
 
 
@@ -92,4 +92,5 @@ You can customize them:
 
 ### What the BEM?
 BEM (Block, Element, Modifier) is a naming convention methodology that makes your css reusable understandable, easier, scalable.
+
 [More info](http://getbem.com/)
